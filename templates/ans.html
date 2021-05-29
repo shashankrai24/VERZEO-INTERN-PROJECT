@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block body %}
+    <div class="jumbotron">
+        <h1 class="display-4" style="text-align: center">YOUR RESULT</h1>
+        <hr class="my-4">
+        <div class="row" style="column-count: 3;column-gap: 300px">
+            <div class="column">
+                <img src={{url}} alt="uploaded image" width="300" height="300" >
+                <br>
+                <br>
+                <h2>UPLOADED IMAGE</h2>
+            </div>
+            <div class="column">
+                <img src={{url2}} alt="threshold image" width="300" height="300" >
+                <br>
+                <br>
+                <h2>SKIN EXTRACTION</h2>
+            </div>
+            <div class="column">
+                <img src={{col}} alt="threshold image" width="300" height="300" >
+                <br>
+                <br>
+                <h2>COLOR BAR</h2>
+            </div>
+            </div>
+            <br>
+            <h1 style="text-align: center">THE SKIN TONE IS {{ans1}}</h1> 
+    </div>
+{% endblock %}
+    

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    </head>
+    <style>
+      body {
+        background-image: url("{{ url_for('static', filename='images/image1.jpg') }}");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+  background-color:#F5FFFA;
+  color: black;
+  text-align: center;
+}
+.rectangle {
+  height: 150px;
+  width: 1000px;
+  background-color:coral;
+}
+.centre {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+    </style>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color:blue">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="color:yellow" href="/"><h2>HOME</h2><span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  style="color:yellow" href="/about"><h2>ABOUT</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:yellow" href="/contact"><h2>CONTACT</h2></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="centre">
+          <div class="rectangle">
+              <h1 style="text-align: center">SKIN TONE DETECTOR</h1>
+              <hr class="my-4" style="background-color:black;">
+              <div class="text-center">
+                <a class="btn btn-primary btn-lg" href="/about" role="button" style="background-color: red">TRY OUT</a>
+                </div>
+          </div>
+      </div>
+      <div class="footer">
+        <strong><h1>VERZEO</h1></strong>
+        <br>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
