@@ -1,10 +1,6 @@
 from flask import *
 import pyrebase
 import tone
-import os
-import sys
-from PIL import Image 
-import PIL 
 config = {
      "apiKey": "AIzaSyBmD7OqXCv4XvVdrR4XMulhpgs-rWMZYdk",
     "authDomain": "verzeo-project.firebaseapp.com",
